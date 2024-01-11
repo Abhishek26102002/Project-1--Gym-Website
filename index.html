@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Freak</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* Css Reset  */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        /* Center and scale the image nicely */
+        background-position: revert;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Baloo 2', cursive;
+    }
+
+    .left {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        left: 11px;
+        top: 1px;
+        /* text-align: center; or .left div  */
+    }
+
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 15px auto;
+        /* border: 2px solid purple; */
+    }
+
+    .right {
+        /* border: 2px solid green; */
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: #b4b4b4;
+        text-decoration: underline;
+    }
+
+    .left img {
+        width: 92px;
+        filter: invert(100%);
+        color: aliceblue;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 5px;
+        font-size: 17px;
+    }
+
+    .container {
+        border: 2px solid silver;
+        display: block;
+        width: 36%;
+        /* height: 122px; */
+        margin: 139px 121px;
+        padding: 66px 35px;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 12px;
+
+    }
+
+    .btn {
+        margin: 7px 8px;
+        text-decoration: none;
+        background-color: #1e1e1e;
+        color: white;
+        padding: 4px 11px;
+        border-radius: 11px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #444141;
+    }
+
+    .form-group input {
+        font-family: 'Baloo 2', cursive;
+        display: block;
+        text-align: center;
+        font-size: 17px;
+        margin: 2px auto;
+        padding: 5px 100px;
+        border-radius: 8px;
+
+    }
+    .form-group h1{
+        text-align: center;
+    }
+    .container button{
+        font-family: 'Baloo 2', cursive;
+        display: block;
+        width: 96%;
+        font-size: 16px;
+        margin: 21px auto;
+    }
+</style>
+
+<body>
+    <header>
+
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Avi's Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us now</button>
+            <button class="btn">Email US</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym of Kolkata Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Your Phn Num">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Your Location">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
